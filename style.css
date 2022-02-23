@@ -1,0 +1,126 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: white;
+}
+
+/* Card */
+.card {
+    background-color: hsl(244, 38%, 16%);
+    border: none;
+    border-radius: 2%;
+    width: 50em;
+    height: 26.5em;
+    margin-left: -200px;
+    margin-top: 150px;
+}
+
+.card-title {
+    color:white;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px;
+}
+
+.card-text {
+    color:hsla(0, 0%, 100%, 0.75);
+    padding: 15px;
+}
+
+.colored-text {
+    color: hsl(277, 64%, 61%);
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 20px;
+}
+
+.stat-count {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stat-info {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+/* Image */
+.imgage-fluid {
+    width:430px;
+    height:397px;
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    filter: brightness(30%) sepia(100) saturate(10) hue-rotate(245deg); 
+}
+
+.image-container {
+    order: 2;
+}
+
+/* Footer */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a,
+.attribution { 
+    color:hsl(277, 64%, 61%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color:hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width:600px) {
+    body {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card {
+        background-color: hsl(244, 38%, 16%);
+        border: none;
+        border-radius: 2%;
+        width: 250px;
+        height: 850px;
+        margin-left: 20px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .imgage-fluid {
+        width:250px;
+        height:250px;
+        border-top-right-radius: 2%;
+        border-top-left-radius: 2%;
+        filter: brightness(30%) sepia(100) saturate(10) hue-rotate(245deg);
+    }
+
+    .image-container {
+        order: 0;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
